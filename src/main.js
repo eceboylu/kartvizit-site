@@ -8,25 +8,24 @@ document.getElementById("btn").addEventListener("click", () => {
 document.getElementById("phone").addEventListener("click", () => {
   const phone = "908503030477";
 
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    const choice = confirm("Arama yapmak için OK, WhatsApp için İptal'e bas");
-    
-    if (choice) {
-      window.location.href = `tel:+${phone}`;
-    } else {
-      window.open(`https://wa.me/${phone}`, "_blank");
-    }
-  } else {
-    window.open(`https://wa.me/${phone}`, "_blank");
-  }
+  // Direkt sistem arama ekranı (iOS/Android native)
+  window.location.href = `tel:+${phone}`;
 });
-
 
 // MAIL
 document.getElementById("mail").addEventListener("click", () => {
   window.location.href = "mailto:info@gpsyazilim.com";
+});
+document.getElementById("whatsapp").addEventListener("click", () => {
+  const phone = "908503030477";
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    window.location.href = `https://wa.me/${phone}`;
+  } else {
+    window.open(`https://wa.me/${phone}`, "_blank");
+  }
 });
 
 
