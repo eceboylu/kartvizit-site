@@ -1,7 +1,7 @@
 import './style.css'
 
 document.getElementById("btn").addEventListener("click", () => {
-  window.location.href = "https://gpsteknoloji.com.tr";
+  window.location.href = "https://gpsposplus.com";
 });
 
 // TELEFON - ara + WhatsApp seçimi
