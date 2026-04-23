@@ -16,6 +16,7 @@ document.getElementById("phone").addEventListener("click", () => {
 document.getElementById("mail").addEventListener("click", () => {
   window.location.href = "mailto:info@gpsyazilim.com";
 });
+
 document.getElementById("whatsapp").addEventListener("click", () => {
   const phone = "908503030477";
 
@@ -32,7 +33,7 @@ document.getElementById("whatsapp").addEventListener("click", () => {
 // HARİTA - yol tarifi
 document.getElementById("map").addEventListener("click", () => {
   const address = encodeURIComponent(
-    "Sultan Selim Mah. Şahinler Cd No:21 Kağıthane İstanbul"
+    "Atatürk Mah. Ertuğrul Gazi Sk. Metropol İstanbul C1 Blok No:2 B İç Kapı No:376 Ataşehir İstanbul"
   );
 
   window.open(
